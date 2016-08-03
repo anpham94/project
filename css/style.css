@@ -1,0 +1,407 @@
+@media screen and (max-width: 768px){
+	body{font-size: 5px;}
+}
+
+/* dinh dang navbar */
+#header nav{
+	padding: 10px 20px 10px 10px;
+	text-transform: uppercase;
+	text-align: center;
+	background: rgba(28, 28, 28, 0.5);
+	border:none;
+}
+
+.navbar-header{
+	display: inline-block;
+}
+
+.navbar-header button{
+	position: relative;
+	left: 110%;
+}
+
+.navbar-header .navbar-brand {
+	position: absolute;
+	left: 10px;
+	font-size: 30px;
+	text-transform: none;
+	font-family: Raleway;
+	color: #FFF;
+	font-weight: 900;
+}
+
+.navbar .header-other{
+	display: block;
+	float: right;
+}
+
+.navbar .navbar-nav{
+	display: inline-block;
+	float: none;
+	position: relative;
+	left: 7%;
+}
+
+.navbar .navbar-collapse .navbar-nav a{
+	font-size: 11px;
+	font-weight: 900;
+	letter-spacing: 1.5px;
+	color: #FFF;
+}
+
+/* dinh dang dropdown menu */
+#header .navbar-nav .dropdown-menu {
+	background-color: #333;
+	margin-top: 14px;
+	max-width: 300px;
+	min-width: 100px;
+}
+
+#header .navbar-nav .dropdown-menu a{
+	padding: 8px 20px;
+}
+
+#header .navbar-nav a:hover {
+	color: #4b97d8;
+}
+
+#header .navbar-nav a:focus{
+	background: rgba(28,28,28,0);
+}
+
+/* dinh dang button hello */
+#hello-btn{
+	color: #545454;
+	border-radius: 25px;
+	min-width: 100px;
+	padding: 9px 15px;
+	font-size: 11px;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    box-shadow: none;
+}
+
+#hello-drd {
+	background: #ededed;
+    margin-top: 13px;
+    padding: 0px 0px;
+    border-radius: 0px;
+    min-width: 96px;
+    max-width: 100px;
+    box-shadow: none;
+}
+
+#hello-drd a {
+	color: #3c3c3c;
+    padding: 10px 0px;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+#hello-btn:hover, .btn-group.open #hello-btn{
+	color: #da5050;
+}
+
+#hello-drd a[data-type="signup"]:hover{
+	color: #12ce10;
+}
+
+#hello-drd a[data-type="login"]:hover{
+	color: blue;
+}
+
+#hello-drd a[data-type="share"]:hover{
+	color: #ff6c00;
+}
+
+/*feature3*/
+/*Gallery*/
+#feature3 .row {
+	overflow: hidden; 
+  margin: 0;
+}
+
+#feature3 .row .catelogy-gallery{
+    padding: 0;
+} 
+
+#feature3 .row .hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: rgba(0,0,0,0.8);
+}
+
+#feature3 .row .hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 25% 0%;
+}
+
+#feature3 .row .hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#feature3 .row .hovereffect:hover img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+#feature3 .row .hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 26px;
+  overflow: hidden;
+  padding: 0.5em 0;
+  background-color: transparent;
+  font-family: 'Vidaloka', serif;
+	line-height: 32px;
+	vertical-align: middle;
+}
+
+#feature3 .row .hovereffect h2:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
+}
+
+#feature3 .row .hovereffect:hover h2:after {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+#feature3 .row .hovereffect a, #feature3 .row .hovereffect p {
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+}
+
+#feature3 .row .hovereffect:hover a, #feature3 .row .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/*Feature4*/
+#feature4 {
+	background-color: #ECF0F1;
+	color: #2C3E50;
+	text-align: center;
+}
+
+#feature4 .hover-contact {
+	background: center;
+}
+
+#feature4 .hovereffect {
+  width: 100%;
+  height: 100%;
+  float: inherit;
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+  background: center;
+}
+
+#feature4 .hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+#feature4 .hovereffect img {
+  display: block;
+  position: relative;
+}
+
+#feature4 .hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+}
+
+#feature4 .hovereffect:hover h2 {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
+  transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
+}
+
+#feature4 .hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent;
+}
+
+#feature4 .hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+#feature4 .hovereffect hr {
+  width: 40%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  border: 1px solid #FFF;
+}
+
+#feature4 .hovereffect  hr:nth-child(3) {
+  -webkit-transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,90deg) scale3d(0,0,1);
+  transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,90deg) scale3d(0,0,1);
+}
+
+#feature4 .hovereffect  hr:nth-child(4) {
+  -webkit-transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,180deg) scale3d(0,0,1);
+  transform: translate3d(-50%,-50%,0) rotate3d(0,0,1, 180deg) scale3d(0,0,1);
+}
+
+#feature4 .hovereffect h2, #feature4 .hovereffect hr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  background-color: transparent;
+  margin: 0px;
+}
+
+#feature4 .set1, #feature4 .set2 {
+  left: 50%;
+  position: absolute;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px;
+}
+
+#feature4 .set1 {
+  top: 40%;
+}
+
+#feature4 .set2 {
+  top: 60%;
+}
+
+#feature4 .hovereffect p {
+  width: 30%;
+  text-transform: none;
+  font-size: 15px;
+  line-height: 2;
+}
+
+#feature4 .hovereffect p a {
+  color: #fff;
+}
+
+#feature4 .hovereffect p a:hover,
+#feature4 .hovereffect p a:focus {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+#feature4 .hovereffect  a i {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  padding: 10px;
+  font-size: 20px;
+}
+
+#feature4 .set1 a:first-child i {
+  -webkit-transform: translate3d(-60px,-60px,0);
+  transform: translate3d(-60px,-60px,0);
+}
+
+#feature4 .set1 a:nth-child(2) i {
+  -webkit-transform: translate3d(60px,-60px,0);
+  transform: translate3d(60px,-60px,0);
+}
+
+#feature4 .set2 a:first-child i {
+  -webkit-transform: translate3d(-60px,60px,0);
+  transform: translate3d(-60px,60px,0);
+}
+
+#feature4 .set2 a:nth-child(2) i {
+  -webkit-transform: translate3d(60px,60px,0);
+  transform: translate3d(60px,60px,0);
+}
+
+#feature4 .hovereffect:hover hr:nth-child(3) {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-90deg) scale3d(1,1,1);
+  transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-90deg) scale3d(1,1,1);
+}
+
+#feature4 .hovereffect:hover hr:nth-child(4) {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-180deg) scale3d(1,1,1);
+  transform: translate3d(-50%,-50%,0) rotate3d(0,0,1,-180deg) scale3d(1,1,1);
+}
+
+#feature4 .hovereffect:hover .set1 i:empty, #feature4 .hovereffect:hover .set2 i:empty {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
